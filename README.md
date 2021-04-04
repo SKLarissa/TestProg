@@ -28,11 +28,13 @@ En plus, j'ai définit deux autres fonctions d'écriture dans le fichier "result
 - La seconde est la onction d'écriture des valeurs recherchées dans le fichier.
 
 
-## Execution
+## Comment executer mon application?
 Pour éxecuter mon applicaction sous Ubuntu, procéder ainsi :
+A partir du terminal,
 - Définir comme repertoire courant le dossier "bin" contenu dans le dossier "build".
-- Dans le terminal, saisir le code suivant : "chmod +x Optim", appuyer sur la touche "Entrer"
-- Dans le terminal, saisir ensuite le code suivant : "sudo ./Optim", appuyer sur latouche "Entrer"
+- Donner à la variable "LD_LIBRARY_PATH" le chemin d'access de la bibliothèque "libOptimisation-d.so" contenu dans le dossier "lib". Par exemple si le chemin d'access de la bibliothèque "libOptimisation-d.so" sur mon PC est:"/home/larissa/Bureau/TestProg/b uild/lib" alors je dois saisir la commande : "LD_LIBRARY_PATH=/home/larissa/Bureau/TestProg/b uild/lib" et appuyer sur la touche "Entrer.
+- saisir la commande :  "export LD_LIBRARY_PATH" et appuyer sur la touche "Entrer.
+- saisir ensuite la commande : "./Optim", appuyer sur la touche "Entrer"
 A ce moment, mon application demarerra en affichant sur le terminal le message suivant: "Saisir le nom du solveur et le nom du problème respectivement : "
   
 Les solveurs sont identifiés par :
